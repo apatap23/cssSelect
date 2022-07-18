@@ -20,15 +20,44 @@
     <h2>Types of Relational Selectors</h2>
     <div>
       <h3>Descendant Combinator</h3>
-      <p>The descendant selector targets any element that is a descendant(child, grandchild, great grandchild, and so on) of an element</p>
-      <span>Example</span>
-      <span>E F </span>
-      <span>Targets any element F that is a descendant of E</span>
+      <span>E F</span>
+      <p>The descendant selector targets any element F that is a descendant(child, grandchild, great grandchild, and so on) of an element E</p>
 
+      <span>Examples</span>
       <span>ol li</span>
       <span>Targets any 'li' element that is a descendant of 'ol' </span>
     </div>
 
+    <div>
+      <h3>Child Combinator</h3>
+      <span> E > F </span>
+      <p>The child combinator matches any element F that is a direct child of element E</p>
+      <p>It will ignore any elements are further nested.</p>
+
+      <span>Examples</span>
+      <span>ol > li </span>
+      <span>This will only target 'li' elements that are directly inside the 'ol' element. Any 'li' elements nested inside a 'ul' element would be ignored.</span>
+    </div>
+
+    <div>
+      <h3>Next Sibling Selector</h3>
+      <span>E + F</span>
+      <p>This selects any element F that shares the same parent as E, and comes directly after E in the markup</p>
+
+      <span>Examples</span>
+      <span>li + li</span>
+      <span>It will target all li elements except the first li element</span>
+    </div>
+
+    <div>
+      <h3>Following Sibling Selector</h3>
+      <span>E ~ F</span>
+      <p>Matches any element F that shares the same parent as any E and comes after it in the markup</p>
+
+      <span>Examples</span>
+      <span>h1 ~ h2</span>
+      <span>Matches any 'h2' that follows any 'h1', as long as they both share the same direct parent</span>
+    </div>
 
   </div>
   </body>
