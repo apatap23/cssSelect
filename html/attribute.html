@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute Selectors</title>
+</head>
+<body>
+  <h1>CSS Attribute Selectors</h1>
+
+  <div>
+    <h2>What is an Attribute Selector?</h2>
+    <p>Attribute selectors select  HTML elements based on having a specific attribute or an attribute with a specified value</p>
+  </div>
+
+  <div>
+    <h2>Types of Attribute Selectors</h2>
+
+    <div>
+      <h3>[attribute] Selector</h3>
+      <p>Applies the style rule to an element if the given attribute exists</p>
+
+      <code>
+        [title]{
+          color:blue
+        }
+      </code>
+      <span>Styles all elements that have a <i>title</i> attribute with the color blue</span>
+    </div>
+
+    <div>
+      <h3>example[attribute] Selector</h3>
+      <p>Applies the style to all 'example' elements that have a given attribute </p>
+
+      <code>
+        a[title]{
+          color:green
+        }
+      </code>
+      <span>All '<a>' elements with a <i>title</i> attribute will be styled green</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
