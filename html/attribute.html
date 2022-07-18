@@ -38,7 +38,21 @@
           color:green
         }
       </code>
-      <span>All '<a>' elements with a <i>title</i> attribute will be styled green</span>
+      <span>All <i>a</i> elements with a <i>title</i> attribute will be styled green</span>
+    </div>
+
+    <div>
+      <h3>[attribute~="value"] Selector</h3>
+      <p>Use the <i>~=</i> operator to select a single attribute from a list of space-seperated values like <code>class="first second"</code></p>
+
+      <code>
+        [class~="second"]{
+          color: #fff
+          background: green
+        }
+      </code>
+
+      <span>Matches any elements with a <i>class</i> attributes that contain space-seperated values, one of which is "second"</span>
     </div>
 
   </div>
